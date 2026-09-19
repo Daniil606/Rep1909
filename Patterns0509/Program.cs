@@ -17,6 +17,7 @@ namespace Patterns0509
             //Prototype.Run();
             //FactoryMethod.Run();
             AbstractFactory.Run();
+
         }
     }
 }
