@@ -17,7 +17,8 @@ namespace Patterns0509
             //Prototype.Run();
             //FactoryMethod.Run();
             AbstractFactory.Run();
-
+            Console.WriteLine("Добавлено изменение в ветке 41");
+            //HAHAHAHAHAHAH
         }
     }
 }
