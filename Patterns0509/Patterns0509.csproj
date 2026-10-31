@@ -94,6 +94,9 @@
     <Compile Include="Generation\Behavior\CarController.cs" />
     <Compile Include="Generation\Command\AbstractCommand.cs" />
     <Compile Include="Generation\Command\Command.cs" />
+    <Compile Include="Generation\Command\CopyCommand.cs" />
+    <Compile Include="Generation\Command\PasteCommand.cs" />
+    <Compile Include="Generation\Command\TextFile.cs" />
     <Compile Include="Generation\Structure\Adapter\Adapter.cs" />
     <Compile Include="Generation\Builderr\Building.cs" />
     <Compile Include="Generation\Builderr\Worker.cs" />

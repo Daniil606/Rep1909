@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Patterns0509.Generation.Command
 {
-    public class AbstractCommand
+    public abstract class AbstractCommand
     {
-        string Text;
-        string Buffer;
+        public TextFile textFile;
+        public abstract void Execute();
     }
 }

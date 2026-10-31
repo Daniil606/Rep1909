@@ -1,5 +1,6 @@
 ﻿using Patterns0509.Generation;
 using Patterns0509.Generation.AbstractFactory;
+using Patterns0509.Generation.Command;
 using Patterns0509.Generation.FactoryMethod;
 using System;
 using System.Collections.Generic;
@@ -38,25 +39,27 @@ namespace Patterns0509
 //</root>";
 //            Console.WriteLine(xmlToJson.Convert(xml));
 
-            Student st1 = new Student("Vasya", 1, 1);
-            Student st2 = new Student("Danya", 1, 2);
-            Student st3 = new Student("Ilya", 3, 1);
+            //Student st1 = new Student("Vasya", 1, 1);
+            //Student st2 = new Student("Danya", 1, 2);
+            //Student st3 = new Student("Ilya", 3, 1);
 
-            Teacher t1 = new Teacher("Petrov", 12);
-            Teacher t2 = new Teacher("Ivanov", 15);
+            //Teacher t1 = new Teacher("Petrov", 12);
+            //Teacher t2 = new Teacher("Ivanov", 15);
 
-            Decanat decanat = new Decanat();
-            foreach (Student student in new Student[] { st1, st2, st3 }) 
-            {
-                decanat.AddStudent(student);
-            }
-            foreach (Teacher teacher in new Teacher[] { t1, t2 })
-            {
-                decanat.AddTeacher(teacher);
-            }
+            //Decanat decanat = new Decanat();
+            //foreach (Student student in new Student[] { st1, st2, st3 }) 
+            //{
+            //    decanat.AddStudent(student);
+            //}
+            //foreach (Teacher teacher in new Teacher[] { t1, t2 })
+            //{
+            //    decanat.AddTeacher(teacher);
+            //}
             //st1.SendMsgToTeacher();
             //t2.SendMsgToStudent();
             
+            Command command = new Command();
+            command.Run();
 
         }
     }
